@@ -6,7 +6,7 @@ export default function TodoForm() {
 
     const {addTodo} = useTodo();  
         //In this way we are extracting whatever functionality we need from "useTodo" as it is a function which has returned 'useContext(TodoContext)' , so wherever we want to use all the values of the context just call useTodo and extract that exact item in this way const {} = useTodo .  
-    console.log(addTodo)
+    // console.log(addTodo)
     const add = (e) => {
         e.preventDefault()
 
