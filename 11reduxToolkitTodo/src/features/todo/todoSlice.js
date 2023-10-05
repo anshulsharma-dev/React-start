@@ -1,6 +1,6 @@
 import { createSlice , nanoid } from "@reduxjs/toolkit";
 
-initialState = {
+const initialState = {
     todos: [{
         id: 1,
         text: 'Hello Todo world'
