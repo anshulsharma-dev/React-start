@@ -20,7 +20,7 @@ export class AuthService {
                 // call another method , so that if the userAccount exists make him login too
                 return this.login({email, password});
             } else {
-                return null;
+                return userAccount;
             }
 
         } catch (error) {

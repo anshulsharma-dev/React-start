@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 
 function PostCard({ $id , 
-    // The appwrite takes the id is this way $id , nothing more
+    // The appwrite takes the id in this way $id , nothing more
     featuredImage , title}) {
   return (
     <Link to= {`/Post/${$id}`}>
