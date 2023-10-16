@@ -6,7 +6,7 @@
 //     databases;
 //     bucket;
 
-//     constructor () {
+//     constructor() {
 //         this.client
 //             .setEndpoint(conf.appwriteUrl)
 //             .setProject(conf.appwriteProjectId);
@@ -224,15 +224,18 @@ export class Service{
     }
 
     async getPosts(queries = [Query.equal("status", "active")]){
+        console.log("getposts")
         try {
+        console.log("getposts , try")
+
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 queries,
-                
-
             )
         } catch (error) {
+        console.log("getposts , catch")
+
             console.log("Appwrite serive :: getPosts :: error", error);
             return false
         }
